@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<title>
+		Angular #3
+		</title>
+	</head>
+	<body ng-controller="c" >
+	<h1>Sistema De Comentario Basico</h1>
+	<input type="text"ng-model="nuevainfo.id">
+	<br>
+	{{nuevainfo.id}}
+	<input type="text"ng-model="nuevainfo.telefono"><br>
+	<button ng-click="anuevainfo()">Agregar</button>
+	<h1>Comentarios</h1>
+	<lu>
+		<li ng-repeat="record in infos ">
+			{{record.id}} 
+			<strong>
+			{{record.telefono}}	
+			</strong>
+		</li>
+	</lu>
+	
+	</body>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="Controller2-1.js"></script>
+</html>

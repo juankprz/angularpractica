@@ -1,0 +1,23 @@
+var a= angular.module("app",[]);
+a.controller("c",function($scope){
+    $scope.nuevainfo={};
+    $scope.eliminar={};
+    $scope.infos=[
+        {
+        id:1,    
+        telefono:123456789
+        },
+        {
+          id:2,
+        telefono:987654321   
+        }
+        ];
+        $scope.anuevainfo=function(){
+          $scope.infos.push($scope.nuevainfo);
+          $scope.nuevainfo={};
+        }
+         $scope.eliminar=function(){
+          $scope.infos.delete($scope.eliminar);
+          $scope.eliminar={};
+        }
+});
