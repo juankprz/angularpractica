@@ -1,0 +1,16 @@
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+    <body  ng-controller="appcontroller">
+       <div ng-repeat="record in juegos ">
+           <h2>
+               {{record.nombre}}
+           </h2>
+           {{record.fecha}}
+       </div> 
+     <script src="/bower_components/angular/angular.js"></script>
+	<script src="Controller3.js"></script>
+    </body>
+</html>
