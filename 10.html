@@ -1,0 +1,22 @@
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>local storage</title>
+</head>
+<body ng-controller="appcontroller">
+   <div ng-repeat="record in datos">
+       <h1>
+           {{record.title}}
+       </h1>
+          <strong>{{record.body}}</strong> 
+   </div>
+   <form ng-submit="guardar()">
+     <input type="text" ng-model="nuevodato.title"/>
+    <input type="text" ng-model="nuevodato.body"/>
+    <button >Guardar</button>
+   </form>
+    <script src="/bower_components/angular/angular.js"></script>
+	<script src="Controller6.js"></script>
+     <script src="/bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+</body>
+</html>
